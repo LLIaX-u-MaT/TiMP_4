@@ -1,0 +1,37 @@
+\begin{theindex}
+
+  \item {/home/stud/Загрузки/local\_git/TiMP\_4/Lab\_4\_2/modCipherBeta.h}, 
+		\hyperpage{13, 14}
+
+  \indexspace
+
+  \item {Cipher}, \hyperpage{7}
+    \subitem {Cipher}, \hyperpage{7}
+    \subitem {decrypt}, \hyperpage{9}
+    \subitem {encrypt}, \hyperpage{9}
+    \subitem {getValidCipherText}, \hyperpage{10}
+    \subitem {getValidKey}, \hyperpage{10}
+    \subitem {getValidOpenText}, \hyperpage{10}
+  \item {cipher\_error}, \hyperpage{11}
+    \subitem {cipher\_error}, \hyperpage{12}
+
+  \indexspace
+
+  \item {decrypt}
+    \subitem {Cipher}, \hyperpage{9}
+
+  \indexspace
+
+  \item {encrypt}
+    \subitem {Cipher}, \hyperpage{9}
+
+  \indexspace
+
+  \item {getValidCipherText}
+    \subitem {Cipher}, \hyperpage{10}
+  \item {getValidKey}
+    \subitem {Cipher}, \hyperpage{10}
+  \item {getValidOpenText}
+    \subitem {Cipher}, \hyperpage{10}
+
+\end{theindex}

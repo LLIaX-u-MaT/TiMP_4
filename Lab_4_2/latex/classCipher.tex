@@ -1,0 +1,170 @@
+\hypertarget{classCipher}{}\doxysection{Класс Cipher}
+\label{classCipher}\index{Cipher@{Cipher}}
+
+
+Класс для шифрования и расшифрования текста.  
+
+
+
+
+{\ttfamily \#include $<$mod\+Cipher\+Beta.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCipher_ae728d0917db639dd49638a268298391f}\label{classCipher_ae728d0917db639dd49638a268298391f}} 
+{\bfseries Cipher} ()=delete
+\begin{DoxyCompactList}\small\item\em Запрещает использование конструктора без параметров. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCipher_a47c763c55dc70fb9caaa6b6551e9f472}{Cipher}} (const std\+::wstring \&key\+\_\+str)
+\begin{DoxyCompactList}\small\item\em Конструктор для установки ключа. \end{DoxyCompactList}\item 
+wstring \mbox{\hyperlink{classCipher_a9ab04ee892e2116167acd09d744054b8}{encrypt}} (const wstring \&text)
+\begin{DoxyCompactList}\small\item\em Зашифровывает текст с использованием заданного ключа. \end{DoxyCompactList}\item 
+wstring \mbox{\hyperlink{classCipher_a8800ab5bb900521825cbe3958922f0b4}{decrypt}} (const wstring \&text)
+\begin{DoxyCompactList}\small\item\em Расшифровывает зашифрованный текст с использованием заданного ключа. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCipher_af9b9b8e259a42895bd2e832858d149f5}{get\+Valid\+Key}} (const std\+::wstring \&key\+\_\+str)
+\begin{DoxyCompactList}\small\item\em Проверяет и возвращает валидный ключ для шифрования. \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{classCipher_aa0c08520490b489c4386f159ccbd2dd1}{get\+Valid\+Open\+Text}} (const std\+::wstring \&s)
+\begin{DoxyCompactList}\small\item\em Проверяет и возвращает валидный открытый текст для шифрования. \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{classCipher_aec10160bd52a01b5b4c4689568d32b94}{get\+Valid\+Cipher\+Text}} (const std\+::wstring \&s)
+\begin{DoxyCompactList}\small\item\em Проверяет и возвращает валидный зашифрованный текст для расшифрования. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для шифрования и расшифрования текста. 
+
+Данный класс реализует методы шифрования и расшифрования текста на основе числового ключа. Класс обеспечивает проверку корректности ключа и текста перед выполнением операций шифрования и расшифрования. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classCipher_a47c763c55dc70fb9caaa6b6551e9f472}\label{classCipher_a47c763c55dc70fb9caaa6b6551e9f472}} 
+\index{Cipher@{Cipher}!Cipher@{Cipher}}
+\index{Cipher@{Cipher}!Cipher@{Cipher}}
+\doxysubsubsection{\texorpdfstring{Cipher()}{Cipher()}}
+{\footnotesize\ttfamily Cipher\+::\+Cipher (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{key\+\_\+str }\end{DoxyParamCaption})}
+
+
+
+Конструктор для установки ключа. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em key\+\_\+str} & Строка, представляющая ключ шифрования. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & Если ключ некорректен. \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classCipher_a8800ab5bb900521825cbe3958922f0b4}\label{classCipher_a8800ab5bb900521825cbe3958922f0b4}} 
+\index{Cipher@{Cipher}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!Cipher@{Cipher}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily wstring Cipher\+::decrypt (\begin{DoxyParamCaption}\item[{const wstring \&}]{text }\end{DoxyParamCaption})}
+
+
+
+Расшифровывает зашифрованный текст с использованием заданного ключа. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em text} & Зашифрованный текст для расшифрования. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Открытый текст. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & Если текст некорректен. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classCipher_a9ab04ee892e2116167acd09d744054b8}\label{classCipher_a9ab04ee892e2116167acd09d744054b8}} 
+\index{Cipher@{Cipher}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!Cipher@{Cipher}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily wstring Cipher\+::encrypt (\begin{DoxyParamCaption}\item[{const wstring \&}]{text }\end{DoxyParamCaption})}
+
+
+
+Зашифровывает текст с использованием заданного ключа. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em text} & Открытый текст для шифрования. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Зашифрованный текст. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & Если текст некорректен. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classCipher_aec10160bd52a01b5b4c4689568d32b94}\label{classCipher_aec10160bd52a01b5b4c4689568d32b94}} 
+\index{Cipher@{Cipher}!getValidCipherText@{getValidCipherText}}
+\index{getValidCipherText@{getValidCipherText}!Cipher@{Cipher}}
+\doxysubsubsection{\texorpdfstring{getValidCipherText()}{getValidCipherText()}}
+{\footnotesize\ttfamily std\+::wstring Cipher\+::get\+Valid\+Cipher\+Text (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Проверяет и возвращает валидный зашифрованный текст для расшифрования. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em s} & Зашифрованный текст для проверки. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Валидный зашифрованный текст. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCipher_af9b9b8e259a42895bd2e832858d149f5}\label{classCipher_af9b9b8e259a42895bd2e832858d149f5}} 
+\index{Cipher@{Cipher}!getValidKey@{getValidKey}}
+\index{getValidKey@{getValidKey}!Cipher@{Cipher}}
+\doxysubsubsection{\texorpdfstring{getValidKey()}{getValidKey()}}
+{\footnotesize\ttfamily int Cipher\+::get\+Valid\+Key (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{key\+\_\+str }\end{DoxyParamCaption})}
+
+
+
+Проверяет и возвращает валидный ключ для шифрования. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em key\+\_\+str} & Строка, представляющая ключ. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Валидный ключ в виде целого числа. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & Если ключ некорректен. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classCipher_aa0c08520490b489c4386f159ccbd2dd1}\label{classCipher_aa0c08520490b489c4386f159ccbd2dd1}} 
+\index{Cipher@{Cipher}!getValidOpenText@{getValidOpenText}}
+\index{getValidOpenText@{getValidOpenText}!Cipher@{Cipher}}
+\doxysubsubsection{\texorpdfstring{getValidOpenText()}{getValidOpenText()}}
+{\footnotesize\ttfamily std\+::wstring Cipher\+::get\+Valid\+Open\+Text (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Проверяет и возвращает валидный открытый текст для шифрования. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em s} & Открытый текст для проверки. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Валидный открытый текст. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+/home/stud/Загрузки/local\+\_\+git/\+Ti\+MP\+\_\+4/\+Lab\+\_\+4\+\_\+2/\mbox{\hyperlink{modCipherBeta_8h}{mod\+Cipher\+Beta.\+h}}\end{DoxyCompactItemize}
